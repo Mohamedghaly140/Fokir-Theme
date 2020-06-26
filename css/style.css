@@ -1,0 +1,662 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* ================= Header ================== */
+.header {
+  background-image: url(../images/slider/slider-01.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+/* ================= Header NavBar ================== */
+.header .navbar {
+  height: 90px;
+  background-color: transparent;
+}
+
+.header .navbar .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar .nav-bar .nav-brand a {
+  color: #ff305b;
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 18px 0;
+}
+
+.header .navbar .nav-bar .nav-links .nav-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar .nav-bar .nav-links .nav-list li {
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+.header .navbar .nav-bar .nav-links .nav-list li a {
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 0.4s ease-in-out;
+}
+
+.header .navbar .nav-bar .nav-links .nav-list li a.active {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ff305b;
+}
+
+.header .navbar .nav-bar .nav-links .nav-list li a:hover {
+  color: #ff305b;
+}
+/* ================= Header NavBar ================== */
+
+/* ================= Header Caption ================== */
+.header .caption {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, 0%);
+  z-index: 3;
+}
+
+.header .caption h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 1px auto;
+}
+
+.header .caption h1 {
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.header .caption h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 1px auto;
+}
+/* ================= Header Caption ================== */
+
+/* ================= Start About ================== */
+.about {
+  margin: 30px auto;
+  padding: 50px 0;
+}
+.about .about-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-profile .border {
+  width: 360px;
+  height: 464px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 8px #555555 inset;
+  display: block;
+  margin-right: 0;
+  margin-top: 0;
+  position: relative;
+  left: 115px;
+}
+
+.about .about-profile .border .image {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about .about-profile .border .image .inner {
+  position: relative;
+}
+
+.about .about-profile .border .image .inner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease-in-out;
+  transform: translateY(100%);
+}
+
+.about .about-profile .border .image .inner:hover .overlay {
+  transform: translateX(0%);
+}
+
+.about .about-profile .border .image .inner .overlay .icons {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+}
+
+.about .about-profile .border .image .inner .overlay span {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.about .about-profile .border .image .inner .overlay span:hover {
+  color: #ff305b;
+}
+
+.about .about-profile .desc {
+  width: 50%;
+}
+
+.about .about-profile .desc h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.about .about-profile .desc h2 span {
+  color: #ff305b;
+}
+
+.about .about-profile .desc p {
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.about .about-profile .about-list {
+  display: flex;
+  align-items: center;
+}
+
+.about .about-profile .about-list ul li {
+  padding: 7px 0;
+}
+
+.about .about-profile .about-list {
+  margin-bottom: 20px;
+}
+
+.about .about-profile .desc .buttons a {
+  background-color: #ff305b;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about .about-profile .desc .buttons a:hover {
+  background-color: #ec2403;
+}
+/* ================= End About ================== */
+
+/* ======================= Start Our Services ======================= */
+.our-services {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.our-services .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-services .cards .card {
+  padding: 25px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.our-services .cards .card .icon {
+  display: block;
+  color: #ff305b;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.our-services .cards .card .card-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px auto;
+}
+
+.our-services .card:hover {
+  background-color: #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* ======================= End Our Services ======================= */
+
+/* ======================= End Our Portfolio ======================= */
+.our-portfolio {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.our-portfolio .links ul {
+  padding-left: 0;
+}
+
+.our-portfolio .links ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.our-portfolio .links ul li a {
+  color: black;
+  font-size: large;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.our-portfolio .links ul li a:hover {
+  color: #ff305b;
+}
+
+.our-portfolio .links ul li a.active {
+  color: #ff305b;
+}
+
+.our-portfolio .products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-portfolio .products .product {
+  margin: 15px;
+  overflow: hidden;
+}
+
+.our-portfolio .products .product .item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: display 0.4s ease-in-out;
+}
+
+.our-portfolio .products .product .item:hover .overlay {
+  display: block;
+}
+
+.our-portfolio .products .product .item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+.our-portfolio .products .product .item .overlay .inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.our-portfolio .products .product .item .overlay .inner span {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #ff305b;
+  font-size: 20px;
+  display: block;
+}
+/* ======================= End Our Portfolio ======================= */
+
+
+/* ======================= Start Our Projects ======================= */
+.projects {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+
+.projects .items .item {
+  padding: 30px 10px;
+}
+
+.projects .items .item .icon {
+  color: #ff305b;
+  font-size: 24px;
+}
+
+.projects .items .item .caption h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.projects .items .item .caption h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+/* ======================= End Our Projects ======================= */
+
+
+/* ======================= End Our Portfolio ======================= */
+.feedback {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.feedback .personal-card {
+  height: 250px;
+  margin: 10px auto;
+  background-color: #f1f1f1;
+  width: 700px;
+  padding: 10px 20px 50px 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback .personal-card .left {
+  width: 600px;
+  height: 200px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(135deg) translate(25%, 135%);
+}
+
+.feedback .personal-card .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 3;
+  position: absolute;
+}
+
+.feedback .personal-card .card-content .image {
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.feedback .personal-card .card-content .card-caption {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.feedback .personal-card .card-content .card-caption h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.feedback .personal-card .card-content .card-caption .location,
+.feedback .personal-card .card-content .card-caption .card-about{
+  color: #666;
+}
+
+.feedback .personal-card .card-content .card-caption .card-about {
+  font-size: 16px;
+  font-style: italic;
+}
+/* ======================= End Our Portfolio ======================= */
+
+
+
+/* ======================= End Our Blog ======================= */
+.our-blog {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+
+.our-blog .title {
+  text-align: center;
+}
+
+.our-blog .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-blog .cards .card {
+  width: 100%;
+  margin: auto 20px;
+  background-color: #fff;
+}
+
+.our-blog .cards .card .card-content {
+  padding: 15px;
+}
+
+.our-blog .cards .card .card-content .card-title {
+  font-size: 20px;
+  color: #333;
+  margin: 5px;
+}
+
+.our-blog .cards .card .card-content a {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.our-blog .cards .card .card-content a:hover {
+  color: #ff305b;
+}
+
+.our-blog .cards .card .card-content .card-caption,
+.our-blog .cards .card .card-content .card-date {
+  color: #666;
+}
+/* ======================= End Our Blog ======================= */
+
+
+
+/* ======================= Start Contact Us ======================= */
+.contact-us {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.contact-us h2 {
+  text-align: center;
+}
+
+.contact-us form {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-us form input {
+  width: 100%;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.contact-us form .name {
+  display: flex;
+}
+
+.contact-us form .name input:last-child {
+  margin-left: 25px;
+}
+
+.contact-us form textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  resize: none;
+}
+/* ======================= End Contact Us ======================= */
+
+
+
+/* ================= Start Footer ================== */
+.footer {
+  padding: 35px 0;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer ul li:hover {
+  color: #ff305b;
+}
+
+.footer p {
+  font-weight: 500;
+}
+
+.footer p span a {
+  display: inline-block;
+  font-weight: 300;
+  color: #ff305b;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer p span a:hover {
+  text-decoration: underline;
+}
+/* ================= End Footer ================== */
+
+/* ================================ Basics ================================ */
+.my-title .title {
+  position: relative;
+}
+
+.my-title .title h2 {
+  color: #333;
+  font-size: 38px;
+  font-weight: bolder;
+  position: relative;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.my-title .title .line {
+  display: block;
+  width: 110px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.my-title .title h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.my-title .title h2::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+/* ================================ Basics ================================ */

@@ -1,0 +1,186 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .header .navbar .nav-bar .nav-links {
+    display: none;
+  }
+  .header .caption {
+    width: 100%;
+  }
+  .about .about-profile {
+    flex-direction: column;
+  }
+  .about .about-profile .border {
+    margin: auto;
+    left: 0;
+  }
+  .about .about-profile .border .image {
+    left: 20px;
+  }
+  .about .about-profile .desc {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .our-services .cards {
+    flex-direction: column;
+  }
+  .our-services .cards .card {
+    margin: 10px auto;
+  }
+  .our-portfolio .products {
+    flex-direction: column;
+  }
+  .our-portfolio .links ul li {
+    display: block;
+    padding: 10px 0;
+  }
+  .projects .items {
+    flex-direction: column;
+  }
+  .feedback .personal-card {
+    width: 100%;
+    height: 400px;
+  }
+  .feedback .personal-card .card-content .image {
+    width: 100px;
+  }
+  .feedback .personal-card .card-content {
+    flex-direction: column;
+  }
+  .feedback .personal-card .card-content .card-caption {
+    text-align: center;
+  }
+  .our-blog .cards {
+    flex-direction: column;
+  }
+  .our-blog .cards .card {
+    margin: 30px auto;
+  }
+  .contact-us form {
+    width: 100%;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .navbar .nav-bar .nav-links {
+    display: none;
+  }
+  .header .caption {
+    width: 100%;
+  }
+  .about .about-profile {
+    flex-direction: column;
+  }
+  .about .about-profile .border {
+    margin: auto;
+    left: 0;
+  }
+  .about .about-profile .desc {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .our-services .cards {
+    display: block;
+    overflow: auto;
+  }
+  .our-services .cards .card {
+    width: 50%;
+    float: left;
+  }
+  .projects .items {
+    display: block;
+    overflow: auto;
+    padding: 10px;
+  }
+  .projects .items .item {
+    width: 50%;
+    float: left;
+    padding: 50px;
+  }
+  .our-portfolio .products {
+    flex-direction: column;
+  }
+  .feedback .personal-card {
+    width: 100%;
+  }
+  .our-blog .cards {
+    flex-direction: column;
+  }
+  .our-blog .cards .card {
+    margin: 30px auto;
+  }
+  .contact-us form {
+    width: 100%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .navbar .nav-bar .side-bar {
+    display: none;
+  }
+  .header .caption {
+    width: 100%;
+  }
+  .about .about-profile {
+    flex-direction: column;
+  }
+  .about .about-profile .border {
+    margin: auto;
+    left: 0;
+  }
+  .about .about-profile .desc {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .our-services .cards {
+    display: block;
+    overflow: auto;
+  }
+  .our-services .cards .card {
+    width: 50%;
+    float: left;
+  }
+  .projects .items {
+    display: block;
+    overflow: auto;
+    padding: 10px;
+  }
+  .projects .items .item {
+    width: 50%;
+    float: left;
+    padding: 50px;
+  }
+  .feedback .personal-card {
+    width: 100%;
+  }
+  .our-blog .cards {
+    flex-direction: column;
+  }
+  .our-blog .cards .card {
+    margin: 30px auto;
+  }
+  .contact-us form {
+    width: 100%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header .navbar .nav-bar .side-bar {
+    display: none;
+  }
+  .about .about-profile .border {
+    left: 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .header .navbar .nav-bar .side-bar {
+    display: none;
+  }
+}
